@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="styles.css" rel="stylesheet" />
+    <title>JavaScript DOM Tutorials</title>
+  </head>
+  <body>
+  	<div id="wrapper">
+	    <header>
+	    	<div id="page-banner">
+	    		<h1 class="title">Arpino Library</h1>
+          <p>Books List </p>
+          <form id="search-books">
+            <input type="text" placeholder="Search books..." />
+          </form>
+	    	</div>
+	    </header>
+	    <div id="book-list">
+	    	<h2 class="title">Books</h2>
+	    	<ul>
+	    		<li>
+	    			<span class="name">Zero Degree</span>
+	    			<span class="delete"> Delete </span>
+	    		</li>
+	    		<li>
+	    			<span class="name">வாடிவாசல் [Vaadivaasal]</span>
+	    			<span class="delete"> Delete </span>
+	    		</li>
+	    		<li>
+	    			<span class="name">கரைந்த நிழல்கள் [Karaintha Nizhalkal]</span>
+	    			<span class="delete"> Delete </span>
+	    		</li>
+	    		<li>
+	    			<span class="name">குருதிப்புனல் [Kuruthi Punal]</span>
+	    			<span class="delete"> Delete </span>
+	    		</li>
+	    	</ul>
+	    </div>
+	    <form id="add-book">
+        <input type="checkbox" id="hide" />
+        <label for="hide">Hide all books</label>
+	    	<input type="text" placeholder="Add a book..." />
+	    	<button>Add</button>
+	    </form>
+      <div id="tabbed-content">
+        <ul class="tabs">
+          <li data-target="#about" class="active">About</li>
+          <li data-target="#contact">Contact</li>
+        </ul>
+        <div class="panel active" id="about">
+          <p>About us.</p>
+          <p>Front-End Developer</p>
+		  <p>&nbsp;</p>
+		  <p>Portfolio :  <a href="https://portfolio-waytologic.vercel.app/"> View</a></p>
+        </div>
+        <div class="panel" id="contact">
+          <p>Contact Page</p>
+          <p>Connect with Github</p>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
